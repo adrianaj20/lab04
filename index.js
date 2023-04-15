@@ -2,16 +2,16 @@ const express = require('express')
 const app = express()
 
 app.get('/', (req, res) => {
-  res.send('Bienvenido a mi aplicación')
+  res.send('Bienvenido a mi aplicación, Najarro')
 })
 
 app.get('/clientes', (req, res) => {
-  const clientes = ['Cliente 1', 'Cliente 2', 'Cliente 3']
+  const clientes = ['Adrian', 'Mario', 'Cinthia']
   res.send(clientes)
 })
 
 app.get('/productos', (req, res) => {
-  const productos = ['Producto 1', 'Producto 2', 'Producto 3']
+  const productos = ['Laptop HP', 'Celular Samsung', 'Reloj Apple']
   res.send(productos)
 })
 
